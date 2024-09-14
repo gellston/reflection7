@@ -30,26 +30,7 @@ namespace ref7 {
             static constexpr bool value = true;
         };
 
-        /**
-         * \class DataType
-         *
-         * \brief Helper structure used to extract the raw type of a composed type
-         *
-         * DataType<T> recursively removes const, reference and pointer modifiers from the given type.
-         * In other words:
-         *
-         * \li DataType<T>::Type == T
-         * \li DataType<const T>::Type == DataType<T>::Type
-         * \li DataType<T&>::Type == DataType<T>::Type
-         * \li DataType<const T&>::Type == DataType<T>::Type
-         * \li DataType<T*>::Type == DataType<T>::Type
-         * \li DataType<const T*>::Type == DataType<T>::Type
-         *
-         * \remark DataType is able to detect smart pointers and properly extract the stored type
-         */
-
-         // Generic version -- T doesn't match with any of our specialization, and is thus considered a raw data type
-         //  - int -> int, int[] -> int, int* -> int.
+    
         template <typename T, typename E = void>
         struct DataType
         {

@@ -6,7 +6,6 @@
 
 
 #include "config.h"
-
 #include "type.h"
 
 #include <memory>
