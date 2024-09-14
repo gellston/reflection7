@@ -35,5 +35,8 @@
     <ClInclude Include="ref7\detail\rawtype.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="ref7\value.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

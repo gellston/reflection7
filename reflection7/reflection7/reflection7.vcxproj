@@ -137,6 +137,7 @@
     <ClInclude Include="ref7\detail\ref7type.h" />
     <ClInclude Include="ref7\detail\rawtype.h" />
     <ClInclude Include="ref7\type.h" />
+    <ClInclude Include="ref7\value.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
